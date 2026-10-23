@@ -1,0 +1,43 @@
+div {
+  width: 200px;
+  margin-bottom: 10px;
+  height: 200px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.tekst1 {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
+.tekst2 {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+}
+.tekst3 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+  text-align: center;
+}
+.billede3 {
+  display: grid;
+}
+.billede3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.billede3 img,
+.billede3 .tekst3 {
+  grid-column: 1;
+  grid-row: 1;
+}

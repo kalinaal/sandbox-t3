@@ -1,0 +1,22 @@
+.billeder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.billede {
+  height: 300px;
+}
+.billede img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.billede :hover {
+  filter: grayscale(80%);
+}
+h1 {
+  color: darkred;
+}
+p {
+  padding: 10px;
+}
